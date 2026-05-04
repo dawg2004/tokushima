@@ -73,33 +73,12 @@
     .tokushima-lp__brand {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
-      color: var(--tokushima-navy);
-      font-weight: 800;
       text-decoration: none;
-      line-height: 1.35;
     }
 
-    .tokushima-lp__brand-mark {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--tokushima-orange), #f6b74f);
-      position: relative;
-      flex: 0 0 auto;
-    }
-
-    .tokushima-lp__brand-mark::after {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      border: 3px solid var(--tokushima-white);
-      border-left: 0;
-      border-bottom: 0;
-      transform: rotate(45deg);
-      left: 10px;
-      top: 10px;
+    .tokushima-lp__brand-logo {
+      width: min(290px, 58vw);
+      height: auto;
     }
 
     .tokushima-lp__nav {
@@ -568,13 +547,8 @@
         display: none;
       }
 
-      .tokushima-lp__brand {
-        font-size: 14px;
-      }
-
-      .tokushima-lp__brand-mark {
-        width: 36px;
-        height: 36px;
+      .tokushima-lp__brand-logo {
+        width: min(230px, 70vw);
       }
 
       .tokushima-lp__photo-stack {
@@ -636,8 +610,7 @@
     <header class="tokushima-lp__site-header">
       <div class="tokushima-lp__inner tokushima-lp__site-header-inner">
         <a class="tokushima-lp__brand" href="https://gensai.or.jp/" aria-label="NPO法人 減災教育普及協会 ホーム">
-          <span class="tokushima-lp__brand-mark" aria-hidden="true"></span>
-          <span>NPO法人<br>減災教育普及協会</span>
+          <img class="tokushima-lp__brand-logo" src="./assets/gensai-logo.png" alt="NPO法人 減災教育普及協会">
         </a>
         <nav class="tokushima-lp__nav" aria-label="関連リンク">
           <a href="https://gensai.or.jp/">ホーム</a>
