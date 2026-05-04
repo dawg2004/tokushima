@@ -3,6 +3,10 @@
     {
       "source": "/",
       "destination": "/tokushima-bousai/"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/tokushima-bousai/assets/:path*"
     }
   ]
 }
