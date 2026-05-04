@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>徳島県地域防災力向上プロジェクト｜減災教育普及協会</title>
+  <meta name="description" content="徳島県と減災教育普及協会の連携協力協定をきっかけに、地域防災力向上を目指すプロジェクトです。子ども、教育現場、地域、企業、行政が連携し、命を守る防災教育を徳島から広げていきます。活動に賛同・支援してくださる賛助会員、協賛企業、地域協力者を募集しています。">
+  <style>
+    :root {
+      --tokushima-orange: #f0831e;
+      --tokushima-orange-dark: #c7600f;
+      --tokushima-green: #2f8b63;
+      --tokushima-navy: #17365d;
+      --tokushima-ink: #263238;
+      --tokushima-muted: #5f6f78;
+      --tokushima-line: #e6e2da;
+      --tokushima-cream: #fbf7ef;
+      --tokushima-gray: #f5f7f8;
+      --tokushima-white: #ffffff;
+      --tokushima-shadow: 0 18px 45px rgba(23, 54, 93, 0.11);
+      --tokushima-radius: 8px;
+      --tokushima-content: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--tokushima-ink);
+      background: var(--tokushima-white);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic", "Noto Sans JP", Meiryo, sans-serif;
+      line-height: 1.85;
+      letter-spacing: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .tokushima-lp {
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(251, 247, 239, 0.76) 0, rgba(255, 255, 255, 0) 520px),
+        var(--tokushima-white);
+    }
+
+    .tokushima-lp__inner {
+      width: min(100% - 40px, var(--tokushima-content));
+      margin-inline: auto;
+    }
+
+    .tokushima-lp__site-header {
+      border-bottom: 1px solid rgba(23, 54, 93, 0.1);
+      background: rgba(255, 255, 255, 0.94);
+    }
+
+    .tokushima-lp__site-header-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .tokushima-lp__brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--tokushima-navy);
+      font-weight: 800;
+      text-decoration: none;
+      line-height: 1.35;
+    }
+
+    .tokushima-lp__brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--tokushima-orange), #f6b74f);
+      position: relative;
+      flex: 0 0 auto;
+    }
+
+    .tokushima-lp__brand-mark::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border: 3px solid var(--tokushima-white);
+      border-left: 0;
+      border-bottom: 0;
+      transform: rotate(45deg);
+      left: 10px;
+      top: 10px;
+    }
+
+    .tokushima-lp__nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--tokushima-navy);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .tokushima-lp__nav a {
+      text-decoration: none;
+    }
+
+    .tokushima-lp__nav a:hover {
+      color: var(--tokushima-orange-dark);
+    }
+
+    .tokushima-lp__hero {
+      padding: clamp(48px, 8vw, 96px) 0 clamp(42px, 7vw, 80px);
+    }
+
+    .tokushima-lp__hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.88fr);
+      align-items: center;
+      gap: clamp(30px, 5vw, 64px);
+    }
+
+    .tokushima-lp__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 18px;
+      color: var(--tokushima-green);
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .tokushima-lp__eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--tokushima-green);
+    }
+
+    .tokushima-lp h1,
+    .tokushima-lp h2,
+    .tokushima-lp h3 {
+      margin: 0;
+      color: var(--tokushima-navy);
+      line-height: 1.35;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    .tokushima-lp h1 {
+      font-size: clamp(34px, 5vw, 58px);
+      max-width: 9.5em;
+    }
+
+    .tokushima-lp h2 {
+      font-size: clamp(26px, 3.3vw, 40px);
+    }
+
+    .tokushima-lp h3 {
+      font-size: clamp(19px, 2vw, 23px);
+    }
+
+    .tokushima-lp p {
+      margin: 0;
+    }
+
+    .tokushima-lp__lead {
+      margin-top: 22px;
+      color: #3c4d57;
+      font-size: clamp(16px, 1.7vw, 18px);
+      line-height: 2;
+      max-width: 680px;
+    }
+
+    .tokushima-lp__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .tokushima-lp__button {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 22px;
+      border: 2px solid transparent;
+      border-radius: 999px;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.4;
+      text-decoration: none;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+    }
+
+    .tokushima-lp__button:hover {
+      transform: translateY(-1px);
+    }
+
+    .tokushima-lp__button--primary {
+      color: var(--tokushima-white);
+      background: var(--tokushima-orange);
+      box-shadow: 0 12px 24px rgba(240, 131, 30, 0.24);
+    }
+
+    .tokushima-lp__button--primary:hover {
+      background: var(--tokushima-orange-dark);
+    }
+
+    .tokushima-lp__button--secondary {
+      color: var(--tokushima-navy);
+      background: var(--tokushima-white);
+      border-color: rgba(23, 54, 93, 0.22);
+    }
+
+    .tokushima-lp__button--secondary:hover {
+      border-color: var(--tokushima-navy);
+      box-shadow: 0 10px 22px rgba(23, 54, 93, 0.1);
+    }
+
+    .tokushima-lp__visual {
+      position: relative;
+      min-height: 500px;
+    }
+
+    .tokushima-lp__photo-stack {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 0.72fr;
+      grid-template-rows: 260px 180px;
+      gap: 14px;
+      z-index: 1;
+    }
+
+    .tokushima-lp__photo {
+      min-height: 160px;
+      overflow: hidden;
+      border-radius: var(--tokushima-radius);
+      background:
+        linear-gradient(135deg, rgba(23, 54, 93, 0.18), rgba(47, 139, 99, 0.18)),
+        repeating-linear-gradient(135deg, #f4efe5 0 16px, #e8f0e9 16px 32px);
+      box-shadow: var(--tokushima-shadow);
+      position: relative;
+    }
+
+    .tokushima-lp__photo::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.72) 0 38px, transparent 39px),
+        linear-gradient(160deg, rgba(240, 131, 30, 0.16), transparent 46%);
+    }
+
+    .tokushima-lp__photo::after {
+      content: attr(data-label);
+      position: absolute;
+      left: 18px;
+      bottom: 16px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: var(--tokushima-navy);
+      background: rgba(255, 255, 255, 0.88);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .tokushima-lp__photo--main {
+      grid-row: span 2;
+    }
+
+    .tokushima-lp__map {
+      position: absolute;
+      right: -28px;
+      bottom: 4px;
+      width: 230px;
+      height: 230px;
+      border: 1px solid rgba(47, 139, 99, 0.16);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.76);
+      display: grid;
+      place-items: center;
+      color: rgba(47, 139, 99, 0.2);
+      font-size: 116px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .tokushima-lp__section {
+      padding: clamp(54px, 7vw, 86px) 0;
+    }
+
+    .tokushima-lp__section--cream {
+      background: var(--tokushima-cream);
+    }
+
+    .tokushima-lp__section--gray {
+      background: var(--tokushima-gray);
+    }
+
+    .tokushima-lp__section-head {
+      max-width: 760px;
+      margin-bottom: clamp(26px, 4vw, 42px);
+    }
+
+    .tokushima-lp__section-head p {
+      margin-top: 14px;
+      color: var(--tokushima-muted);
+      font-size: 16px;
+    }
+
+    .tokushima-lp__text-block {
+      max-width: 880px;
+      color: #3c4d57;
+      font-size: 16px;
+    }
+
+    .tokushima-lp__text-block p + p {
+      margin-top: 18px;
+    }
+
+    .tokushima-lp__cta-band {
+      margin-top: 30px;
+      padding: 24px;
+      border: 1px solid rgba(240, 131, 30, 0.18);
+      border-radius: var(--tokushima-radius);
+      background: var(--tokushima-white);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      box-shadow: 0 14px 34px rgba(23, 54, 93, 0.07);
+    }
+
+    .tokushima-lp__cta-band p {
+      color: var(--tokushima-navy);
+      font-weight: 800;
+    }
+
+    .tokushima-lp__grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .tokushima-lp__grid--two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tokushima-lp__card {
+      min-height: 100%;
+      padding: 26px;
+      border: 1px solid rgba(23, 54, 93, 0.11);
+      border-radius: var(--tokushima-radius);
+      background: var(--tokushima-white);
+      box-shadow: 0 12px 28px rgba(23, 54, 93, 0.06);
+    }
+
+    .tokushima-lp__card p {
+      margin-top: 12px;
+      color: var(--tokushima-muted);
+      font-size: 15px;
+    }
+
+    .tokushima-lp__icon {
+      width: 46px;
+      height: 46px;
+      margin-bottom: 18px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--tokushima-white);
+      background: var(--tokushima-orange);
+      font-weight: 900;
+    }
+
+    .tokushima-lp__icon--green {
+      background: var(--tokushima-green);
+    }
+
+    .tokushima-lp__support-list {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .tokushima-lp__support-item {
+      padding: 20px;
+      border-radius: var(--tokushima-radius);
+      background: var(--tokushima-white);
+      border: 1px solid rgba(23, 54, 93, 0.1);
+    }
+
+    .tokushima-lp__support-item h3 {
+      font-size: 18px;
+    }
+
+    .tokushima-lp__support-item p {
+      margin-top: 10px;
+      color: var(--tokushima-muted);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .tokushima-lp__activity {
+      display: grid;
+      grid-template-columns: 72px minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .tokushima-lp__activity-number {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--tokushima-orange-dark);
+      background: #fff2e5;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .tokushima-lp__steps {
+      counter-reset: tokushima-step;
+      display: grid;
+      gap: 14px;
+      max-width: 900px;
+    }
+
+    .tokushima-lp__step {
+      counter-increment: tokushima-step;
+      display: grid;
+      grid-template-columns: 108px minmax(0, 1fr);
+      gap: 18px;
+      align-items: center;
+      padding: 18px 22px;
+      border-radius: var(--tokushima-radius);
+      background: var(--tokushima-white);
+      border: 1px solid rgba(23, 54, 93, 0.1);
+    }
+
+    .tokushima-lp__step::before {
+      content: "STEP " counter(tokushima-step);
+      color: var(--tokushima-green);
+      font-weight: 900;
+      line-height: 1.4;
+    }
+
+    .tokushima-lp__sponsor {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.72fr);
+      gap: clamp(26px, 5vw, 56px);
+      align-items: start;
+    }
+
+    .tokushima-lp__sponsor-menu {
+      display: grid;
+      gap: 10px;
+      padding: 24px;
+      border-radius: var(--tokushima-radius);
+      background: var(--tokushima-white);
+      box-shadow: var(--tokushima-shadow);
+    }
+
+    .tokushima-lp__sponsor-menu span {
+      padding: 12px 14px;
+      border-radius: 6px;
+      color: var(--tokushima-navy);
+      background: var(--tokushima-gray);
+      font-weight: 800;
+    }
+
+    .tokushima-lp__message {
+      position: relative;
+      padding: clamp(28px, 5vw, 50px);
+      border-left: 6px solid var(--tokushima-orange);
+      border-radius: var(--tokushima-radius);
+      background: var(--tokushima-white);
+      box-shadow: var(--tokushima-shadow);
+    }
+
+    .tokushima-lp__message p {
+      color: #3c4d57;
+    }
+
+    .tokushima-lp__message p + p {
+      margin-top: 18px;
+    }
+
+    .tokushima-lp__final {
+      padding: clamp(58px, 8vw, 92px) 0;
+      color: var(--tokushima-white);
+      background:
+        linear-gradient(135deg, rgba(23, 54, 93, 0.96), rgba(47, 139, 99, 0.92)),
+        var(--tokushima-navy);
+    }
+
+    .tokushima-lp__final h2 {
+      color: var(--tokushima-white);
+    }
+
+    .tokushima-lp__final p {
+      margin-top: 16px;
+      max-width: 700px;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .tokushima-lp__final .tokushima-lp__button--secondary {
+      color: var(--tokushima-white);
+      background: transparent;
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .tokushima-lp__site-footer {
+      padding: 28px 0;
+      color: #53646d;
+      background: #fff;
+      border-top: 1px solid rgba(23, 54, 93, 0.1);
+      font-size: 13px;
+    }
+
+    @media (max-width: 960px) {
+      .tokushima-lp__hero-grid,
+      .tokushima-lp__sponsor {
+        grid-template-columns: 1fr;
+      }
+
+      .tokushima-lp h1 {
+        max-width: 100%;
+      }
+
+      .tokushima-lp__visual {
+        min-height: auto;
+      }
+
+      .tokushima-lp__grid,
+      .tokushima-lp__grid--two,
+      .tokushima-lp__support-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .tokushima-lp__inner {
+        width: min(100% - 28px, var(--tokushima-content));
+      }
+
+      .tokushima-lp__site-header-inner {
+        min-height: 66px;
+      }
+
+      .tokushima-lp__nav {
+        display: none;
+      }
+
+      .tokushima-lp__brand {
+        font-size: 14px;
+      }
+
+      .tokushima-lp__brand-mark {
+        width: 36px;
+        height: 36px;
+      }
+
+      .tokushima-lp__photo-stack {
+        grid-template-columns: 1fr;
+        grid-template-rows: 260px 160px 160px;
+      }
+
+      .tokushima-lp__photo--main {
+        grid-row: auto;
+      }
+
+      .tokushima-lp__map {
+        display: none;
+      }
+
+      .tokushima-lp__actions,
+      .tokushima-lp__cta-band {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .tokushima-lp__button {
+        width: 100%;
+        min-height: 54px;
+        padding-inline: 18px;
+        text-align: center;
+      }
+
+      .tokushima-lp__grid,
+      .tokushima-lp__grid--two,
+      .tokushima-lp__support-list {
+        grid-template-columns: 1fr;
+      }
+
+      .tokushima-lp__card,
+      .tokushima-lp__support-item {
+        padding: 22px;
+      }
+
+      .tokushima-lp__activity {
+        grid-template-columns: 56px minmax(0, 1fr);
+      }
+
+      .tokushima-lp__activity-number {
+        width: 56px;
+        height: 56px;
+        font-size: 17px;
+      }
+
+      .tokushima-lp__step {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="tokushima-lp">
+    <header class="tokushima-lp__site-header">
+      <div class="tokushima-lp__inner tokushima-lp__site-header-inner">
+        <a class="tokushima-lp__brand" href="https://gensai.or.jp/" aria-label="NPO法人 減災教育普及協会 ホーム">
+          <span class="tokushima-lp__brand-mark" aria-hidden="true"></span>
+          <span>NPO法人<br>減災教育普及協会</span>
+        </a>
+        <nav class="tokushima-lp__nav" aria-label="関連リンク">
+          <a href="https://gensai.or.jp/">ホーム</a>
+          <a href="https://gensai.or.jp/join/">ご入会</a>
+          <a href="/contact/">お問い合わせ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="tokushima-lp__hero" aria-labelledby="tokushima-hero-title">
+        <div class="tokushima-lp__inner tokushima-lp__hero-grid">
+          <div>
+            <p class="tokushima-lp__eyebrow">徳島県地域防災力向上プロジェクト(仮)</p>
+            <h1 id="tokushima-hero-title">徳島から、地域防災の新しいモデルをつくる。</h1>
+            <p class="tokushima-lp__lead">徳島県と減災教育普及協会は、地域防災力の向上を目的とした連携協力協定を締結しました。形式的な避難訓練から、命を守る行動につながる実践へ。子ども、教育現場、地域、企業、行政が一体となって、「考え、動ける人」を育てる防災教育を広げていきます。</p>
+            <div class="tokushima-lp__actions" aria-label="プロジェクトへの参加導線">
+              <a class="tokushima-lp__button tokushima-lp__button--primary" href="https://gensai.or.jp/join/">賛助会員として支援する</a>
+              <a class="tokushima-lp__button tokushima-lp__button--secondary" href="/contact/">プロジェクトについて相談する</a>
+            </div>
+          </div>
+          <div class="tokushima-lp__visual" aria-label="活動写真プレースホルダー">
+            <div class="tokushima-lp__photo-stack">
+              <!-- TODO: 徳島県庁での協定締結写真に差し替え。alt例: 徳島県と減災教育普及協会による連携協力協定締結の様子 -->
+              <div class="tokushima-lp__photo tokushima-lp__photo--main" role="img" aria-label="協定締結写真のプレースホルダー" data-label="協定締結写真"></div>
+              <!-- TODO: 子ども向け防災教育の活動写真に差し替え。alt例: 子どもたちが防災教育プログラムに参加する様子 -->
+              <div class="tokushima-lp__photo" role="img" aria-label="子ども向け防災教育写真のプレースホルダー" data-label="防災教育"></div>
+              <!-- TODO: YURETA体験写真に差し替え。alt例: YURETAを使って地震の揺れを体験する様子 -->
+              <div class="tokushima-lp__photo" role="img" aria-label="YURETA体験写真のプレースホルダー" data-label="YURETA体験"></div>
+            </div>
+            <div class="tokushima-lp__map" aria-hidden="true">徳</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tokushima-lp__section tokushima-lp__section--cream" aria-labelledby="tokushima-background-title">
+        <div class="tokushima-lp__inner">
+          <div class="tokushima-lp__section-head">
+            <p class="tokushima-lp__eyebrow">協定締結の背景</p>
+            <h2 id="tokushima-background-title">なぜ、徳島から始めるのか。</h2>
+          </div>
+          <div class="tokushima-lp__text-block">
+            <p>徳島県では、南海トラフ地震をはじめとする大規模災害への備えが重要な地域課題です。一方で、従来の避難訓練は「実施すること」が目的化しやすく、実際に危険を判断し、命を守る行動につなげるには、さらなるアップデートが必要です。</p>
+            <p>減災教育普及協会は、地震の揺れを体験できる教材や、落下物・家具転倒などの危険を体感的に学ぶプログラムを通じて、子どもから大人までが「自分ごと」として防災を学べる場をつくってきました。</p>
+            <p>今回の協定をきっかけに、徳島県内の教育機関、市町村、地域団体、企業と連携し、地域全体で防災力を高める取り組みをさらに広げていきます。</p>
+          </div>
+          <div class="tokushima-lp__cta-band">
+            <p>徳島から広がる防災教育の輪に、参加・支援をお願いします。</p>
+            <div class="tokushima-lp__actions">
+              <a class="tokushima-lp__button tokushima-lp__button--primary" href="https://gensai.or.jp/join/">賛助会員として支援する</a>
+              <a class="tokushima-lp__button tokushima-lp__button--secondary" href="/contact/">プロジェクトについて相談する</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tokushima-lp__section" aria-labelledby="tokushima-goal-title">
+        <div class="tokushima-lp__inner">
+          <div class="tokushima-lp__section-head">
+            <p class="tokushima-lp__eyebrow">実現したいこと</p>
+            <h2 id="tokushima-goal-title">地域防災を、もっと実践的に。もっと自分ごとに。</h2>
+          </div>
+          <div class="tokushima-lp__grid">
+            <article class="tokushima-lp__card">
+              <div class="tokushima-lp__icon" aria-hidden="true">1</div>
+              <h3>避難訓練をアップデートする</h3>
+              <p>「集まるだけ」「机の下に入るだけ」の訓練から、状況を判断し、命を守る行動につながる訓練へ。</p>
+            </article>
+            <article class="tokushima-lp__card">
+              <div class="tokushima-lp__icon tokushima-lp__icon--green" aria-hidden="true">2</div>
+              <h3>子どもたちの“生きる力”を育てる</h3>
+              <p>乳幼児・園児・児童・生徒の発達段階に合わせて、怖がらせるのではなく、理解し、動ける防災教育を広げます。</p>
+            </article>
+            <article class="tokushima-lp__card">
+              <div class="tokushima-lp__icon" aria-hidden="true">3</div>
+              <h3>地域で助け合う仕組みをつくる</h3>
+              <p>行政、教育機関、企業、地域住民が連携し、災害時に支え合える地域ネットワークを育てます。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="tokushima-lp__section tokushima-lp__section--gray" aria-labelledby="tokushima-supporters-title">
+        <div class="tokushima-lp__inner">
+          <div class="tokushima-lp__section-head">
+            <p class="tokushima-lp__eyebrow">募集している方</p>
+            <h2 id="tokushima-supporters-title">この取り組みに賛同してくださる方を募集しています。</h2>
+          </div>
+          <div class="tokushima-lp__support-list">
+            <article class="tokushima-lp__support-item">
+              <h3>個人の方</h3>
+              <p>防災、減災、教育、子どもの命を守る活動に関心がある方。</p>
+            </article>
+            <article class="tokushima-lp__support-item">
+              <h3>教育・保育関係者</h3>
+              <p>保育園、幼稚園、小学校、中学校、高校、学童、子育て支援施設などで、防災教育を見直したい方。</p>
+            </article>
+            <article class="tokushima-lp__support-item">
+              <h3>自治体・地域団体</h3>
+              <p>地域の避難訓練、防災イベント、住民向け研修をアップデートしたい方。</p>
+            </article>
+            <article class="tokushima-lp__support-item">
+              <h3>企業・団体</h3>
+              <p>地域貢献、CSR、スポンサー協賛、社員向け防災研修として活動を支援したい企業・団体。</p>
+            </article>
+            <article class="tokushima-lp__support-item">
+              <h3>専門家・講師候補</h3>
+              <p>防災士、教育関係者、福祉関係者、医療関係者、地域活動者など、現場で活動を広げたい方。</p>
+            </article>
+          </div>
+          <div class="tokushima-lp__cta-band">
+            <p>まずは賛助会員として、活動を継続的に支えてください。</p>
+            <div class="tokushima-lp__actions">
+              <a class="tokushima-lp__button tokushima-lp__button--primary" href="https://gensai.or.jp/join/">賛助会員として支援する</a>
+              <a class="tokushima-lp__button tokushima-lp__button--secondary" href="/contact/">プロジェクトについて相談する</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tokushima-lp__section" aria-labelledby="tokushima-activities-title">
+        <div class="tokushima-lp__inner">
+          <div class="tokushima-lp__section-head">
+            <p class="tokushima-lp__eyebrow">主な活動内容</p>
+            <h2 id="tokushima-activities-title">徳島県内で広げていく主な活動</h2>
+          </div>
+          <div class="tokushima-lp__grid tokushima-lp__grid--two">
+            <article class="tokushima-lp__card tokushima-lp__activity">
+              <div class="tokushima-lp__activity-number" aria-hidden="true">01</div>
+              <div>
+                <h3>こどもユレタキャラバンの実施</h3>
+                <p>子どもたちが地震の揺れや危険を体験的に学ぶ防災教育プログラム。</p>
+              </div>
+            </article>
+            <article class="tokushima-lp__card tokushima-lp__activity">
+              <div class="tokushima-lp__activity-number" aria-hidden="true">02</div>
+              <div>
+                <h3>避難訓練のアップデート</h3>
+                <p>地域や施設の実情に合わせ、実際の災害時に役立つ避難訓練へ改善。</p>
+              </div>
+            </article>
+            <article class="tokushima-lp__card tokushima-lp__activity">
+              <div class="tokushima-lp__activity-number" aria-hidden="true">03</div>
+              <div>
+                <h3>教育・保育現場向け研修</h3>
+                <p>先生・保育者・支援者が、子どもに防災を伝えるための研修。</p>
+              </div>
+            </article>
+            <article class="tokushima-lp__card tokushima-lp__activity">
+              <div class="tokushima-lp__activity-number" aria-hidden="true">04</div>
+              <div>
+                <h3>地域防災イベント</h3>
+                <p>住民、企業、行政、教育機関が参加できる体験型の減災イベント。</p>
+              </div>
+            </article>
+            <article class="tokushima-lp__card tokushima-lp__activity">
+              <div class="tokushima-lp__activity-number" aria-hidden="true">05</div>
+              <div>
+                <h3>地域ゆらし隊の育成</h3>
+                <p>地域で継続的に活動できる人材・チームづくり。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="tokushima-lp__section tokushima-lp__section--cream" aria-labelledby="tokushima-join-title">
+        <div class="tokushima-lp__inner">
+          <div class="tokushima-lp__section-head">
+            <p class="tokushima-lp__eyebrow">参加・支援の方法</p>
+            <h2 id="tokushima-join-title">参加・支援の方法</h2>
+          </div>
+          <div class="tokushima-lp__steps">
+            <div class="tokushima-lp__step">お問い合わせまたは賛助会員ページからお申し込み</div>
+            <div class="tokushima-lp__step">協会より活動内容・参加方法をご案内</div>
+            <div class="tokushima-lp__step">必要に応じて説明会・研修に参加</div>
+            <div class="tokushima-lp__step">地域・学校・企業・団体など、それぞれの立場に合わせて活動開始</div>
+          </div>
+          <div class="tokushima-lp__actions">
+            <a class="tokushima-lp__button tokushima-lp__button--primary" href="https://gensai.or.jp/join/">賛助会員として支援する</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="tokushima-lp__section" aria-labelledby="tokushima-sponsor-title">
+        <div class="tokushima-lp__inner tokushima-lp__sponsor">
+          <div>
+            <div class="tokushima-lp__section-head">
+              <p class="tokushima-lp__eyebrow">スポンサー・協賛募集</p>
+              <h2 id="tokushima-sponsor-title">スポンサー・協賛企業を募集しています</h2>
+            </div>
+            <div class="tokushima-lp__text-block">
+              <p>徳島県内の子どもたち、地域住民、教育・福祉施設に向けた減災教育を広げるため、活動を支援してくださる企業・団体を募集しています。</p>
+              <p>協賛いただいたご支援は、教材・体験プログラム・地域研修・防災イベントの実施などに活用されます。</p>
+              <p>企業の地域貢献活動、CSR、防災啓発、社員研修、地域連携の一環として、ぜひ本プロジェクトへの参画をご検討ください。</p>
+            </div>
+            <div class="tokushima-lp__actions">
+              <a class="tokushima-lp__button tokushima-lp__button--primary" href="https://gensai.or.jp/join/">賛助会員として支援する</a>
+              <a class="tokushima-lp__button tokushima-lp__button--secondary" href="/contact/">プロジェクトについて相談する</a>
+            </div>
+          </div>
+          <aside class="tokushima-lp__sponsor-menu" aria-label="協賛メニュー例">
+            <span>活動協賛</span>
+            <span>イベント協賛</span>
+            <span>教材協賛</span>
+            <span>企業研修導入</span>
+            <span>地域キャラバン支援</span>
+            <span>自治体・教育機関への導入支援</span>
+          </aside>
+        </div>
+      </section>
+
+      <section class="tokushima-lp__section tokushima-lp__section--gray" aria-labelledby="tokushima-message-title">
+        <div class="tokushima-lp__inner">
+          <div class="tokushima-lp__section-head">
+            <p class="tokushima-lp__eyebrow">理事長メッセージ</p>
+            <h2 id="tokushima-message-title">徳島から、全国へ。命を守る教育を広げるために。</h2>
+          </div>
+          <div class="tokushima-lp__message">
+            <p>災害は、いつ、どこで起こるか分かりません。だからこそ大切なのは、特別な人だけが知識を持つことではなく、地域に暮らす一人ひとりが、危険を知り、考え、動けるようになることです。</p>
+            <p>徳島県との協定は、地域の皆さまと共に積み重ねてきた活動が、新しい一歩を踏み出す大きなきっかけとなりました。</p>
+            <p>この取り組みを、徳島から全国へ。子どもたちの命を守り、地域の未来を守るために、ぜひ皆さまの力を貸してください。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tokushima-lp__final" aria-labelledby="tokushima-final-title">
+        <div class="tokushima-lp__inner">
+          <h2 id="tokushima-final-title">徳島から、地域防災の未来を変えていく。</h2>
+          <p>子どもたちの命を守る防災教育を、地域全体で育てていくために。このプロジェクトに賛同し、参加・支援してくださる方を募集しています。</p>
+          <div class="tokushima-lp__actions">
+            <a class="tokushima-lp__button tokushima-lp__button--primary" href="https://gensai.or.jp/join/">賛助会員として支援する</a>
+            <a class="tokushima-lp__button tokushima-lp__button--secondary" href="/contact/">プロジェクトについて相談する</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="tokushima-lp__site-footer">
+      <div class="tokushima-lp__inner">© NPO法人 減災教育普及協会</div>
+    </footer>
+  </div>
+</body>
+</html>
