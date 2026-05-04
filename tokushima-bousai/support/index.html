@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プロジェクト賛同表明フォーム｜徳島県地域防災力向上プロジェクト</title>
+  <meta name="description" content="徳島県地域防災力向上プロジェクトへの賛同表明フォームです。個人、教育・保育関係者、自治体、企業、団体、専門家など、地域防災と減災教育の取り組みに賛同・参加を希望される方はこちらからお知らせください。">
+  <style>
+    :root {
+      --tokushima-orange: #f0831e;
+      --tokushima-orange-dark: #c7600f;
+      --tokushima-green: #2f8b63;
+      --tokushima-navy: #17365d;
+      --tokushima-ink: #263238;
+      --tokushima-muted: #5f6f78;
+      --tokushima-line: #e6e2da;
+      --tokushima-cream: #fbf7ef;
+      --tokushima-gray: #f5f7f8;
+      --tokushima-white: #ffffff;
+      --tokushima-shadow: 0 18px 45px rgba(23, 54, 93, 0.11);
+      --tokushima-radius: 8px;
+      --tokushima-content: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--tokushima-ink);
+      background: var(--tokushima-cream);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic", "Noto Sans JP", Meiryo, sans-serif;
+      line-height: 1.85;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .tokushima-form {
+      min-height: 100vh;
+    }
+
+    .tokushima-form__inner {
+      width: min(100% - 40px, var(--tokushima-content));
+      margin-inline: auto;
+    }
+
+    .tokushima-form__site-header {
+      border-bottom: 1px solid rgba(23, 54, 93, 0.1);
+      background: rgba(255, 255, 255, 0.96);
+    }
+
+    .tokushima-form__site-header-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .tokushima-form__brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .tokushima-form__brand-logo {
+      width: min(290px, 58vw);
+    }
+
+    .tokushima-form__brand-partner {
+      color: var(--tokushima-navy);
+      font-size: clamp(18px, 2.2vw, 24px);
+      font-weight: 850;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .tokushima-form__nav {
+      display: flex;
+      gap: 18px;
+      color: var(--tokushima-navy);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .tokushima-form__nav a {
+      text-decoration: none;
+    }
+
+    .tokushima-form__hero {
+      padding: clamp(42px, 7vw, 78px) 0 34px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(251, 247, 239, 0.88)),
+        var(--tokushima-cream);
+    }
+
+    .tokushima-form__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 16px;
+      color: var(--tokushima-green);
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .tokushima-form__eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--tokushima-green);
+    }
+
+    .tokushima-form h1,
+    .tokushima-form h2,
+    .tokushima-form h3 {
+      margin: 0;
+      color: var(--tokushima-navy);
+      line-height: 1.35;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    .tokushima-form h1 {
+      font-size: clamp(31px, 4.5vw, 50px);
+    }
+
+    .tokushima-form h2 {
+      font-size: clamp(23px, 3vw, 34px);
+    }
+
+    .tokushima-form p {
+      margin: 0;
+    }
+
+    .tokushima-form__lead {
+      max-width: 760px;
+      margin-top: 18px;
+      color: #3c4d57;
+      font-size: clamp(16px, 1.7vw, 18px);
+      line-height: 2;
+    }
+
+    .tokushima-form__back {
+      display: inline-flex;
+      margin-top: 24px;
+      color: var(--tokushima-navy);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .tokushima-form__main {
+      padding: 34px 0 clamp(58px, 8vw, 92px);
+    }
+
+    .tokushima-form__layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.78fr) minmax(420px, 1fr);
+      gap: clamp(22px, 4vw, 46px);
+      align-items: start;
+    }
+
+    .tokushima-form__note,
+    .tokushima-form__panel {
+      border: 1px solid rgba(23, 54, 93, 0.11);
+      border-radius: var(--tokushima-radius);
+      background: var(--tokushima-white);
+      box-shadow: var(--tokushima-shadow);
+    }
+
+    .tokushima-form__note {
+      padding: 26px;
+    }
+
+    .tokushima-form__note p {
+      margin-top: 12px;
+      color: var(--tokushima-muted);
+      font-size: 15px;
+    }
+
+    .tokushima-form__note-list {
+      display: grid;
+      gap: 12px;
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tokushima-form__note-list li {
+      padding: 13px 14px;
+      border-radius: 6px;
+      background: var(--tokushima-gray);
+      color: var(--tokushima-navy);
+      font-weight: 800;
+    }
+
+    .tokushima-form__panel {
+      padding: clamp(22px, 4vw, 34px);
+    }
+
+    .tokushima-form__form {
+      display: grid;
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .tokushima-form__fields {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .tokushima-form__field {
+      display: grid;
+      gap: 7px;
+    }
+
+    .tokushima-form__field--full {
+      grid-column: 1 / -1;
+    }
+
+    .tokushima-form label,
+    .tokushima-form legend {
+      color: var(--tokushima-navy);
+      font-size: 14px;
+      font-weight: 850;
+    }
+
+    .tokushima-form__required {
+      color: var(--tokushima-orange-dark);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .tokushima-form input,
+    .tokushima-form select,
+    .tokushima-form textarea {
+      width: 100%;
+      min-height: 48px;
+      padding: 11px 13px;
+      border: 1px solid #cfd8dd;
+      border-radius: 6px;
+      background: #fff;
+      color: var(--tokushima-ink);
+      font: inherit;
+      line-height: 1.55;
+    }
+
+    .tokushima-form textarea {
+      min-height: 132px;
+      resize: vertical;
+    }
+
+    .tokushima-form input:focus,
+    .tokushima-form select:focus,
+    .tokushima-form textarea:focus {
+      outline: 3px solid rgba(240, 131, 30, 0.18);
+      border-color: var(--tokushima-orange);
+    }
+
+    .tokushima-form__checks {
+      display: grid;
+      gap: 10px;
+      padding: 16px;
+      border: 1px solid rgba(23, 54, 93, 0.1);
+      border-radius: 6px;
+      background: var(--tokushima-gray);
+    }
+
+    .tokushima-form__check {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #3c4d57;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .tokushima-form__check input {
+      width: 18px;
+      min-width: 18px;
+      height: 18px;
+      min-height: 18px;
+      margin-top: 7px;
+      accent-color: var(--tokushima-orange);
+    }
+
+    .tokushima-form__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-top: 6px;
+    }
+
+    .tokushima-form__button {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 24px;
+      border: 2px solid transparent;
+      border-radius: 999px;
+      color: var(--tokushima-white);
+      background: var(--tokushima-orange);
+      box-shadow: 0 12px 24px rgba(240, 131, 30, 0.24);
+      font: inherit;
+      font-weight: 850;
+      line-height: 1.4;
+      cursor: pointer;
+    }
+
+    .tokushima-form__button:hover {
+      background: var(--tokushima-orange-dark);
+    }
+
+    .tokushima-form__button--secondary {
+      min-height: 46px;
+      padding: 10px 18px;
+      color: var(--tokushima-navy);
+      background: #e8f7fb;
+      border-color: #a8dce8;
+      box-shadow: none;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .tokushima-form__help {
+      color: var(--tokushima-muted);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .tokushima-form__result {
+      display: none;
+      margin-top: 22px;
+      padding: 18px;
+      border: 1px solid rgba(47, 139, 99, 0.22);
+      border-radius: var(--tokushima-radius);
+      background: #eef8f1;
+    }
+
+    .tokushima-form__result.is-visible {
+      display: block;
+    }
+
+    .tokushima-form__result h3 {
+      font-size: 19px;
+    }
+
+    .tokushima-form__summary {
+      white-space: pre-wrap;
+      margin-top: 12px;
+      padding: 14px;
+      border-radius: 6px;
+      background: var(--tokushima-white);
+      color: #3c4d57;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .tokushima-form__site-footer {
+      padding: 28px 0;
+      color: #53646d;
+      background: var(--tokushima-white);
+      border-top: 1px solid rgba(23, 54, 93, 0.1);
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .tokushima-form__layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .tokushima-form__inner {
+        width: min(100% - 28px, var(--tokushima-content));
+      }
+
+      .tokushima-form__site-header-inner {
+        min-height: 66px;
+      }
+
+      .tokushima-form__nav {
+        display: none;
+      }
+
+      .tokushima-form__brand-logo {
+        width: min(220px, 58vw);
+      }
+
+      .tokushima-form__brand-partner {
+        font-size: 17px;
+      }
+
+      .tokushima-form__fields {
+        grid-template-columns: 1fr;
+      }
+
+      .tokushima-form__button,
+      .tokushima-form__button--secondary {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="tokushima-form">
+    <header class="tokushima-form__site-header">
+      <div class="tokushima-form__inner tokushima-form__site-header-inner">
+        <a class="tokushima-form__brand" href="/tokushima-bousai/" aria-label="徳島県地域防災力向上プロジェクト トップ">
+          <img class="tokushima-form__brand-logo" src="../assets/gensai-logo.png" alt="NPO法人 減災教育普及協会">
+          <span class="tokushima-form__brand-partner">× 徳島県</span>
+        </a>
+        <nav class="tokushima-form__nav" aria-label="関連リンク">
+          <a href="/tokushima-bousai/">プロジェクトトップ</a>
+          <a href="https://gensai.or.jp/join/">賛助会員</a>
+          <a href="/contact/">お問い合わせ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="tokushima-form__hero">
+        <div class="tokushima-form__inner">
+          <p class="tokushima-form__eyebrow">賛同表明フォーム</p>
+          <h1>徳島県地域防災力向上プロジェクトに賛同する</h1>
+          <p class="tokushima-form__lead">子どもたちの命を守る防災教育を徳島から広げていくために、活動への賛同・参加意向をお知らせください。個人、教育・保育関係者、自治体、企業、団体、専門家など、立場に合わせた関わり方をご案内します。</p>
+          <a class="tokushima-form__back" href="/tokushima-bousai/">← プロジェクトページへ戻る</a>
+        </div>
+      </section>
+
+      <section class="tokushima-form__main" aria-labelledby="support-form-title">
+        <div class="tokushima-form__inner tokushima-form__layout">
+          <aside class="tokushima-form__note">
+            <p class="tokushima-form__eyebrow">ご入力前に</p>
+            <h2>賛同表明後の流れ</h2>
+            <p>いただいた内容をもとに、協会よりプロジェクトの参加方法、説明会、協賛・研修の相談などをご案内します。</p>
+            <ul class="tokushima-form__note-list">
+              <li>個人として応援・参加したい</li>
+              <li>学校・園・施設で防災教育を相談したい</li>
+              <li>企業・団体として協賛を検討したい</li>
+              <li>地域で活動を広げる人材として関わりたい</li>
+            </ul>
+          </aside>
+
+          <section class="tokushima-form__panel">
+            <p class="tokushima-form__eyebrow">入力フォーム</p>
+            <h2 id="support-form-title">賛同内容をお知らせください</h2>
+            <p class="tokushima-form__help">送信前に入力内容を確認できます。正式なお申し込み・ご相談につなげるため、連絡先と関心のある関わり方をご入力ください。</p>
+
+            <form class="tokushima-form__form" id="tokushimaSupportForm" action="/contact/" method="post">
+              <!-- TODO: 正式なフォームURLやWordPressフォームのショートコードに差し替え可能です。 -->
+              <div class="tokushima-form__fields">
+                <div class="tokushima-form__field">
+                  <label for="supporterType">参加区分 <span class="tokushima-form__required">必須</span></label>
+                  <select id="supporterType" name="参加区分" required>
+                    <option value="">選択してください</option>
+                    <option>個人</option>
+                    <option>教育・保育関係者</option>
+                    <option>自治体・地域団体</option>
+                    <option>企業・団体</option>
+                    <option>専門家・講師候補</option>
+                    <option>その他</option>
+                  </select>
+                </div>
+
+                <div class="tokushima-form__field">
+                  <label for="name">お名前 <span class="tokushima-form__required">必須</span></label>
+                  <input id="name" name="お名前" type="text" autocomplete="name" required>
+                </div>
+
+                <div class="tokushima-form__field">
+                  <label for="organization">所属・団体名</label>
+                  <input id="organization" name="所属・団体名" type="text" autocomplete="organization">
+                </div>
+
+                <div class="tokushima-form__field">
+                  <label for="role">役職・立場</label>
+                  <input id="role" name="役職・立場" type="text">
+                </div>
+
+                <div class="tokushima-form__field">
+                  <label for="email">メールアドレス <span class="tokushima-form__required">必須</span></label>
+                  <input id="email" name="メールアドレス" type="email" autocomplete="email" required>
+                </div>
+
+                <div class="tokushima-form__field">
+                  <label for="phone">電話番号</label>
+                  <input id="phone" name="電話番号" type="tel" autocomplete="tel">
+                </div>
+
+                <div class="tokushima-form__field">
+                  <label for="area">活動・所在地エリア</label>
+                  <input id="area" name="活動・所在地エリア" type="text" placeholder="例: 徳島市、鳴門市、県外など">
+                </div>
+
+                <div class="tokushima-form__field">
+                  <label for="contactPreference">希望する連絡方法</label>
+                  <select id="contactPreference" name="希望する連絡方法">
+                    <option>メール</option>
+                    <option>電話</option>
+                    <option>どちらでも可</option>
+                  </select>
+                </div>
+
+                <fieldset class="tokushima-form__field tokushima-form__field--full tokushima-form__checks">
+                  <legend>関心のある関わり方</legend>
+                  <label class="tokushima-form__check"><input type="checkbox" name="関心のある関わり方" value="活動への賛同・応援">活動への賛同・応援</label>
+                  <label class="tokushima-form__check"><input type="checkbox" name="関心のある関わり方" value="防災教育・研修の相談">防災教育・研修の相談</label>
+                  <label class="tokushima-form__check"><input type="checkbox" name="関心のある関わり方" value="地域イベント・キャラバンへの参加">地域イベント・キャラバンへの参加</label>
+                  <label class="tokushima-form__check"><input type="checkbox" name="関心のある関わり方" value="企業協賛・CSR連携">企業協賛・CSR連携</label>
+                  <label class="tokushima-form__check"><input type="checkbox" name="関心のある関わり方" value="講師・地域人材としての参加">講師・地域人材としての参加</label>
+                </fieldset>
+
+                <div class="tokushima-form__field tokushima-form__field--full">
+                  <label for="message">賛同メッセージ・相談内容</label>
+                  <textarea id="message" name="賛同メッセージ・相談内容" placeholder="例: 学校での防災教育を相談したい、企業として協賛を検討したい、地域で活動に参加したい など"></textarea>
+                </div>
+
+                <label class="tokushima-form__check tokushima-form__field--full">
+                  <input type="checkbox" name="個人情報の取り扱いへの同意" value="同意する" required>
+                  <span>入力内容をプロジェクト賛同・参加相談への連絡に利用することに同意します。<span class="tokushima-form__required"> 必須</span></span>
+                </label>
+              </div>
+
+              <div class="tokushima-form__actions">
+                <button class="tokushima-form__button" type="submit">入力内容を確認する</button>
+                <a class="tokushima-form__button tokushima-form__button--secondary" href="https://gensai.or.jp/join/">賛助会員として支援する</a>
+              </div>
+              <p class="tokushima-form__help">入力内容は、プロジェクトのご案内や参加方法のご相談に利用します。</p>
+            </form>
+
+            <div class="tokushima-form__result" id="supportResult" aria-live="polite">
+              <h3>入力内容を確認しました</h3>
+              <p class="tokushima-form__help">下記内容をコピーして、お問い合わせフォームへ貼り付けて送信できます。</p>
+              <div class="tokushima-form__summary" id="supportSummary"></div>
+              <div class="tokushima-form__actions">
+                <button class="tokushima-form__button" type="button" id="copySummary">内容をコピーする</button>
+                <a class="tokushima-form__button tokushima-form__button--secondary" href="/contact/">お問い合わせページへ進む</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="tokushima-form__site-footer">
+      <div class="tokushima-form__inner">© NPO法人 減災教育普及協会</div>
+    </footer>
+  </div>
+
+  <script>
+    const form = document.getElementById("tokushimaSupportForm");
+    const result = document.getElementById("supportResult");
+    const summary = document.getElementById("supportSummary");
+    const copyButton = document.getElementById("copySummary");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (!form.reportValidity()) {
+        return;
+      }
+
+      const data = new FormData(form);
+      const interests = data.getAll("関心のある関わり方");
+      const lines = [
+        "徳島県地域防災力向上プロジェクト 賛同表明",
+        "",
+        `参加区分: ${data.get("参加区分") || ""}`,
+        `お名前: ${data.get("お名前") || ""}`,
+        `所属・団体名: ${data.get("所属・団体名") || ""}`,
+        `役職・立場: ${data.get("役職・立場") || ""}`,
+        `メールアドレス: ${data.get("メールアドレス") || ""}`,
+        `電話番号: ${data.get("電話番号") || ""}`,
+        `活動・所在地エリア: ${data.get("活動・所在地エリア") || ""}`,
+        `希望する連絡方法: ${data.get("希望する連絡方法") || ""}`,
+        `関心のある関わり方: ${interests.length ? interests.join("、") : ""}`,
+        "",
+        "賛同メッセージ・相談内容:",
+        data.get("賛同メッセージ・相談内容") || ""
+      ];
+
+      summary.textContent = lines.join("\n");
+      result.classList.add("is-visible");
+      result.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    copyButton.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(summary.textContent);
+      copyButton.textContent = "コピーしました";
+    });
+  </script>
+</body>
+</html>
