@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>賛同者・賛同団体一覧｜徳島県地域防災力向上プロジェクト</title>
+  <meta name="description" content="徳島県地域防災力向上プロジェクトに賛同いただいた個人、教育・保育関係者、自治体・地域団体、企業・団体、専門家の一覧ページです。掲載許可をいただいた方・団体を順次掲載します。">
+  <style>
+    :root {
+      --tokushima-orange: #f0831e;
+      --tokushima-orange-dark: #c7600f;
+      --tokushima-green: #2f8b63;
+      --tokushima-navy: #17365d;
+      --tokushima-ink: #263238;
+      --tokushima-muted: #5f6f78;
+      --tokushima-cream: #fbf7ef;
+      --tokushima-gray: #f5f7f8;
+      --tokushima-white: #ffffff;
+      --tokushima-shadow: 0 18px 45px rgba(23, 54, 93, 0.11);
+      --tokushima-radius: 8px;
+      --tokushima-content: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--tokushima-ink);
+      background: var(--tokushima-white);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic", "Noto Sans JP", Meiryo, sans-serif;
+      line-height: 1.85;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .tokushima-supporters {
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(251, 247, 239, 0.78) 0, rgba(255, 255, 255, 0) 520px),
+        var(--tokushima-white);
+    }
+
+    .tokushima-supporters__inner {
+      width: min(100% - 40px, var(--tokushima-content));
+      margin-inline: auto;
+    }
+
+    .tokushima-supporters__site-header {
+      border-bottom: 1px solid rgba(23, 54, 93, 0.1);
+      background: rgba(255, 255, 255, 0.96);
+    }
+
+    .tokushima-supporters__site-header-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .tokushima-supporters__brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .tokushima-supporters__brand-logo {
+      width: min(290px, 58vw);
+    }
+
+    .tokushima-supporters__brand-partner {
+      color: var(--tokushima-navy);
+      font-size: clamp(18px, 2.2vw, 24px);
+      font-weight: 850;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .tokushima-supporters__nav {
+      display: flex;
+      gap: 18px;
+      color: var(--tokushima-navy);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .tokushima-supporters__nav a {
+      text-decoration: none;
+    }
+
+    .tokushima-supporters__hero {
+      padding: clamp(46px, 7vw, 84px) 0 clamp(30px, 5vw, 54px);
+    }
+
+    .tokushima-supporters__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 16px;
+      color: var(--tokushima-green);
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .tokushima-supporters__eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--tokushima-green);
+    }
+
+    .tokushima-supporters h1,
+    .tokushima-supporters h2,
+    .tokushima-supporters h3 {
+      margin: 0;
+      color: var(--tokushima-navy);
+      line-height: 1.35;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    .tokushima-supporters h1 {
+      max-width: 900px;
+      font-size: clamp(32px, 4.8vw, 54px);
+    }
+
+    .tokushima-supporters h2 {
+      font-size: clamp(24px, 3vw, 36px);
+    }
+
+    .tokushima-supporters h3 {
+      font-size: 18px;
+    }
+
+    .tokushima-supporters p {
+      margin: 0;
+    }
+
+    .tokushima-supporters__lead {
+      max-width: 800px;
+      margin-top: 18px;
+      color: #3c4d57;
+      font-size: clamp(16px, 1.7vw, 18px);
+      line-height: 2;
+    }
+
+    .tokushima-supporters__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .tokushima-supporters__button {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 22px;
+      border: 2px solid transparent;
+      border-radius: 999px;
+      color: var(--tokushima-white);
+      background: var(--tokushima-orange);
+      box-shadow: 0 12px 24px rgba(240, 131, 30, 0.24);
+      font-weight: 850;
+      line-height: 1.4;
+      text-decoration: none;
+    }
+
+    .tokushima-supporters__button--secondary {
+      min-height: 46px;
+      padding: 10px 18px;
+      color: var(--tokushima-navy);
+      background: #e8f7fb;
+      border-color: #a8dce8;
+      box-shadow: none;
+      font-size: 14px;
+    }
+
+    .tokushima-supporters__main {
+      padding: 20px 0 clamp(60px, 8vw, 96px);
+      background: var(--tokushima-gray);
+    }
+
+    .tokushima-supporters__summary {
+      transform: translateY(-24px);
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .tokushima-supporters__metric {
+      padding: 22px;
+      border: 1px solid rgba(23, 54, 93, 0.1);
+      border-radius: var(--tokushima-radius);
+      background: var(--tokushima-white);
+      box-shadow: 0 12px 28px rgba(23, 54, 93, 0.06);
+    }
+
+    .tokushima-supporters__metric strong {
+      display: block;
+      color: var(--tokushima-orange-dark);
+      font-size: clamp(26px, 4vw, 40px);
+      line-height: 1.1;
+    }
+
+    .tokushima-supporters__metric span {
+      display: block;
+      margin-top: 8px;
+      color: var(--tokushima-navy);
+      font-weight: 850;
+    }
+
+    .tokushima-supporters__section {
+      padding: clamp(28px, 5vw, 48px) 0 0;
+    }
+
+    .tokushima-supporters__section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+
+    .tokushima-supporters__section-head p {
+      color: var(--tokushima-muted);
+      font-size: 14px;
+    }
+
+    .tokushima-supporters__list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tokushima-supporters__item {
+      min-height: 84px;
+      padding: 18px;
+      border: 1px solid rgba(23, 54, 93, 0.1);
+      border-radius: var(--tokushima-radius);
+      background: var(--tokushima-white);
+      box-shadow: 0 10px 22px rgba(23, 54, 93, 0.05);
+    }
+
+    .tokushima-supporters__item span {
+      display: block;
+      margin-top: 6px;
+      color: var(--tokushima-muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .tokushima-supporters__empty {
+      grid-column: 1 / -1;
+      padding: 22px;
+      border: 1px dashed rgba(23, 54, 93, 0.24);
+      border-radius: var(--tokushima-radius);
+      background: rgba(255, 255, 255, 0.74);
+      color: var(--tokushima-muted);
+    }
+
+    .tokushima-supporters__note {
+      margin-top: 28px;
+      padding: 22px;
+      border-left: 5px solid var(--tokushima-orange);
+      border-radius: var(--tokushima-radius);
+      background: var(--tokushima-white);
+      color: #3c4d57;
+      box-shadow: 0 12px 28px rgba(23, 54, 93, 0.06);
+    }
+
+    .tokushima-supporters__site-footer {
+      padding: 28px 0;
+      color: #53646d;
+      background: var(--tokushima-white);
+      border-top: 1px solid rgba(23, 54, 93, 0.1);
+      font-size: 13px;
+    }
+
+    @media (max-width: 960px) {
+      .tokushima-supporters__summary,
+      .tokushima-supporters__list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .tokushima-supporters__inner {
+        width: min(100% - 28px, var(--tokushima-content));
+      }
+
+      .tokushima-supporters__site-header-inner {
+        min-height: 66px;
+      }
+
+      .tokushima-supporters__nav {
+        display: none;
+      }
+
+      .tokushima-supporters__brand-logo {
+        width: min(220px, 58vw);
+      }
+
+      .tokushima-supporters__brand-partner {
+        font-size: 17px;
+      }
+
+      .tokushima-supporters__summary,
+      .tokushima-supporters__list {
+        grid-template-columns: 1fr;
+      }
+
+      .tokushima-supporters__section-head {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .tokushima-supporters__button {
+        width: 100%;
+      }
+
+      .tokushima-supporters__button--secondary {
+        width: fit-content;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="tokushima-supporters">
+    <header class="tokushima-supporters__site-header">
+      <div class="tokushima-supporters__inner tokushima-supporters__site-header-inner">
+        <a class="tokushima-supporters__brand" href="/tokushima-bousai/" aria-label="徳島県地域防災力向上プロジェクト トップ">
+          <img class="tokushima-supporters__brand-logo" src="../assets/gensai-logo.png" alt="NPO法人 減災教育普及協会">
+          <span class="tokushima-supporters__brand-partner">× 徳島県</span>
+        </a>
+        <nav class="tokushima-supporters__nav" aria-label="関連リンク">
+          <a href="/tokushima-bousai/">プロジェクトトップ</a>
+          <a href="/tokushima-bousai/support/">賛同表明</a>
+          <a href="https://gensai.or.jp/join/">賛助会員</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="tokushima-supporters__hero">
+        <div class="tokushima-supporters__inner">
+          <p class="tokushima-supporters__eyebrow">賛同者・賛同団体一覧</p>
+          <h1>徳島から地域防災の新しいモデルを共につくる皆さま</h1>
+          <p class="tokushima-supporters__lead">徳島県地域防災力向上プロジェクトの趣旨に賛同し、活動への参加・支援・協力を表明いただいた方、団体、企業を掲載します。掲載はご本人・団体の許可をいただいた情報のみ行います。</p>
+          <div class="tokushima-supporters__actions">
+            <a class="tokushima-supporters__button" href="/tokushima-bousai/support/">プロジェクトに賛同表明する</a>
+            <a class="tokushima-supporters__button tokushima-supporters__button--secondary" href="/tokushima-bousai/">プロジェクトトップへ戻る</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="tokushima-supporters__main" aria-label="賛同者一覧">
+        <div class="tokushima-supporters__inner">
+          <div class="tokushima-supporters__summary" aria-label="掲載状況">
+            <div class="tokushima-supporters__metric">
+              <strong id="totalCount">0</strong>
+              <span>掲載賛同者数</span>
+            </div>
+            <div class="tokushima-supporters__metric">
+              <strong id="organizationCount">0</strong>
+              <span>団体・企業</span>
+            </div>
+            <div class="tokushima-supporters__metric">
+              <strong id="educationCount">0</strong>
+              <span>教育・保育関係</span>
+            </div>
+            <div class="tokushima-supporters__metric">
+              <strong id="individualCount">0</strong>
+              <span>個人・専門家</span>
+            </div>
+          </div>
+
+          <section class="tokushima-supporters__section" aria-labelledby="company-title">
+            <div class="tokushima-supporters__section-head">
+              <h2 id="company-title">企業・団体</h2>
+              <p>企業協賛、CSR、地域連携、社員研修など</p>
+            </div>
+            <ul class="tokushima-supporters__list" id="companyList"></ul>
+          </section>
+
+          <section class="tokushima-supporters__section" aria-labelledby="education-title">
+            <div class="tokushima-supporters__section-head">
+              <h2 id="education-title">教育・保育関係</h2>
+              <p>保育園、幼稚園、学校、学童、子育て支援施設など</p>
+            </div>
+            <ul class="tokushima-supporters__list" id="educationList"></ul>
+          </section>
+
+          <section class="tokushima-supporters__section" aria-labelledby="community-title">
+            <div class="tokushima-supporters__section-head">
+              <h2 id="community-title">自治体・地域団体</h2>
+              <p>市町村、地域団体、防災組織、住民団体など</p>
+            </div>
+            <ul class="tokushima-supporters__list" id="communityList"></ul>
+          </section>
+
+          <section class="tokushima-supporters__section" aria-labelledby="individual-title">
+            <div class="tokushima-supporters__section-head">
+              <h2 id="individual-title">個人・専門家</h2>
+              <p>防災士、教育関係者、福祉・医療関係者、地域活動者など</p>
+            </div>
+            <ul class="tokushima-supporters__list" id="individualList"></ul>
+          </section>
+
+          <div class="tokushima-supporters__note">
+            <p>掲載名、肩書き、地域、リンクの有無は、賛同者ご本人または団体の確認・許可を得た内容のみ反映します。未確認の実績、参加人数、協賛企業名は掲載しません。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="tokushima-supporters__site-footer">
+      <div class="tokushima-supporters__inner">© NPO法人 減災教育普及協会</div>
+    </footer>
+  </div>
+
+  <script>
+    const supporters = [
+      /*
+      掲載許可済みの賛同者のみ追加してください。
+      例:
+      {
+        category: "company",
+        name: "株式会社サンプル",
+        note: "徳島県内企業 / 活動協賛",
+        url: "https://example.com"
+      }
+      category は company, education, community, individual のいずれか。
+      */
+    ];
+
+    const listMap = {
+      company: document.getElementById("companyList"),
+      education: document.getElementById("educationList"),
+      community: document.getElementById("communityList"),
+      individual: document.getElementById("individualList")
+    };
+
+    const labelMap = {
+      company: "企業・団体",
+      education: "教育・保育関係",
+      community: "自治体・地域団体",
+      individual: "個人・専門家"
+    };
+
+    const renderItem = (supporter) => {
+      const item = document.createElement("li");
+      item.className = "tokushima-supporters__item";
+
+      const title = supporter.url ? document.createElement("a") : document.createElement("strong");
+      title.textContent = supporter.name;
+      if (supporter.url) {
+        title.href = supporter.url;
+        title.target = "_blank";
+        title.rel = "noopener";
+      }
+
+      item.appendChild(title);
+
+      if (supporter.note) {
+        const note = document.createElement("span");
+        note.textContent = supporter.note;
+        item.appendChild(note);
+      }
+
+      return item;
+    };
+
+    Object.entries(listMap).forEach(([category, list]) => {
+      const entries = supporters.filter((supporter) => supporter.category === category);
+
+      if (!entries.length) {
+        const empty = document.createElement("li");
+        empty.className = "tokushima-supporters__empty";
+        empty.textContent = `${labelMap[category]}の掲載許可済み賛同者を準備中です。`;
+        list.appendChild(empty);
+        return;
+      }
+
+      entries.forEach((supporter) => list.appendChild(renderItem(supporter)));
+    });
+
+    document.getElementById("totalCount").textContent = String(supporters.length);
+    document.getElementById("organizationCount").textContent = String(supporters.filter((supporter) => supporter.category === "company" || supporter.category === "community").length);
+    document.getElementById("educationCount").textContent = String(supporters.filter((supporter) => supporter.category === "education").length);
+    document.getElementById("individualCount").textContent = String(supporters.filter((supporter) => supporter.category === "individual").length);
+  </script>
+</body>
+</html>
